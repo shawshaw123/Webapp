@@ -130,7 +130,6 @@
         </div>
     </div>
 </div>
-
 <style>
 .auth-container {
     display: grid;
@@ -141,16 +140,17 @@
 }
 
 .auth-card {
-    background-color: var(--white);
+    background-color: #d1fae5; /* Light green background */
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     overflow: hidden;
+    color: #065f46; /* Dark green text */
 }
 
 .auth-info {
     padding: var(--spacing-8);
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: #d1fae5; /* Light green background */
+    color: #065f46;
     border-radius: var(--border-radius);
     position: relative;
     overflow: hidden;
@@ -166,7 +166,7 @@
     background: url('https://images.pexels.com/photos/256502/pexels-photo-256502.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
-    opacity: 0.1;
+    opacity: 0.08;
     z-index: 0;
 }
 
@@ -195,13 +195,15 @@
     font-size: 1.25rem;
     width: 24px;
     text-align: center;
+    color: #10b981; /* Accent green */
 }
 
 .demo-note {
     margin-top: var(--spacing-8);
     padding: var(--spacing-4);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #bbf7d0; /* Softer green note box */
     border-radius: var(--border-radius);
+    color: #065f46;
 }
 
 .demo-note h4 {
@@ -209,12 +211,12 @@
 }
 
 .light-link {
-    color: var(--white);
+    color: #065f46;
     text-decoration: underline;
 }
 
 .light-link:hover {
-    color: var(--gray-200);
+    color: #047857; /* Slightly darker green */
 }
 
 .auth-form {
@@ -224,8 +226,9 @@
 
 .card-footer {
     padding: var(--spacing-4);
-    background-color: var(--gray-50);
+    background-color: #bbf7d0;
     text-align: center;
+    color: #065f46;
 }
 
 .text-center {
@@ -234,7 +237,7 @@
 
 small {
     font-size: 0.875rem;
-    color: var(--gray-500);
+    color: #065f46;
     display: block;
     margin-top: var(--spacing-1);
 }
@@ -243,7 +246,7 @@ small {
     .auth-container {
         grid-template-columns: 1fr;
     }
-    
+
     .auth-info {
         display: none;
     }

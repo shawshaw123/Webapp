@@ -233,15 +233,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 .order-summary {
     padding: var(--spacing-4);
-    background-color: var(--gray-100);
+    background-color: #d1fae5; /* light green */
     border-radius: var(--border-radius);
+    color: #065f46;
 }
 
 .summary-item {
     display: flex;
     justify-content: space-between;
     padding: var(--spacing-2) 0;
-    border-bottom: 1px solid var(--gray-200);
+    border-bottom: 1px solid #a7f3d0;
 }
 
 .summary-item:last-child {
@@ -251,13 +252,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 .summary-item.total {
     margin-top: var(--spacing-4);
     padding-top: var(--spacing-4);
-    border-top: 2px solid var(--gray-300);
+    border-top: 2px solid #6ee7b7;
     font-weight: 700;
     font-size: 1.25rem;
 }
 
 .item-label {
-    color: var(--gray-600);
+    color: #047857;
 }
 
 .payment-methods {
@@ -280,10 +281,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 .payment-method label {
     display: flex;
     padding: var(--spacing-4);
-    border: 2px solid var(--gray-300);
+    border: 2px solid #6ee7b7;
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: all 0.2s ease;
+    background-color: #ecfdf5;
 }
 
 .payment-method label.disabled {
@@ -292,21 +294,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 
 .payment-method input[type="radio"]:checked + label {
-    border-color: var(--primary);
-    background-color: rgba(59, 130, 246, 0.05);
+    border-color: #10b981;
+    background-color: #bbf7d0;
 }
 
 .payment-method input[type="radio"]:focus + label {
-    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3);
 }
 
 .method-icon {
     font-size: 1.5rem;
-    color: var(--primary);
+    color: #10b981;
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background-color: rgba(59, 130, 246, 0.1);
+    background-color: #d1fae5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -319,15 +321,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 .method-info h4 {
     margin-bottom: var(--spacing-1);
+    color: #065f46;
 }
 
 .method-info p {
-    color: var(--gray-600);
+    color: #047857;
     margin-bottom: var(--spacing-1);
 }
 
 .method-error {
-    color: var(--error) !important;
+    color: #dc2626 !important; /* error red */
 }
 
 .info-section {
@@ -337,7 +340,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 .info-section h4 {
     display: flex;
     align-items: center;
-    color: var(--primary);
+    color: #10b981;
     margin-bottom: var(--spacing-2);
 }
 

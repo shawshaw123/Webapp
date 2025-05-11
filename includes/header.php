@@ -8,8 +8,7 @@
     <?php if (isset($_GET['page']) && $_GET['page'] === 'admin'): ?>
     <link rel="stylesheet" href="assets/css/admin.css">
     <?php endif; ?>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <header>

@@ -80,7 +80,7 @@
         <div class="price-card">
             <div class="price-header">
                 <h3>Black & White</h3>
-                <div class="price">$0.05<span>/page</span></div>
+                <div class="price">₱5<span>/page</span></div>
             </div>
             <ul class="price-features">
                 <li><i class="fas fa-check"></i> Standard A4 paper</li>
@@ -92,7 +92,7 @@
         <div class="price-card featured">
             <div class="price-header">
                 <h3>Color</h3>
-                <div class="price">$0.15<span>/page</span></div>
+                <div class="price">₱10<span>/page</span></div>
             </div>
             <ul class="price-features">
                 <li><i class="fas fa-check"></i> High-quality color prints</li>
@@ -104,7 +104,7 @@
         <div class="price-card">
             <div class="price-header">
                 <h3>Double-sided</h3>
-                <div class="price-discount">$0.02<span>/page discount</span></div>
+                <div class="price-discount">₱3<span>/page discount</span></div>
             </div>
             <ul class="price-features">
                 <li><i class="fas fa-check"></i> Eco-friendly option</li>
@@ -119,10 +119,10 @@
 <style>
 /* Home page specific styles */
 .hero-section {
-    background: linear-gradient(rgba(30, 64, 175, 0.9), rgba(30, 64, 175, 0.8)), url('https://images.pexels.com/photos/159775/library-la-trobe-study-students-159775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background: linear-gradient(rgba(209, 250, 229, 0.95), rgba(187, 247, 208, 0.9)); /* Light green gradient */
     background-size: cover;
     background-position: center;
-    color: var(--white);
+    color: #065f46; /* Dark green text for contrast */
     padding: var(--spacing-16) 0;
     margin: calc(-1 * var(--spacing-8)) 0 var(--spacing-8);
     text-align: center;
@@ -137,12 +137,14 @@
 .hero-content h1 {
     font-size: 2.5rem;
     margin-bottom: var(--spacing-4);
+    color: #064e3b; /* Slightly darker for heading */
 }
 
 .hero-content p {
     font-size: 1.25rem;
     margin-bottom: var(--spacing-8);
     opacity: 0.9;
+    color: #065f46;
 }
 
 .hero-buttons {
@@ -154,6 +156,17 @@
 .hero-buttons .btn {
     padding: var(--spacing-3) var(--spacing-8);
     font-size: 1.125rem;
+    background-color: #34d399; /* Primary light green */
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-buttons .btn:hover {
+    background-color: #10b981; /* Darker green on hover */
+    transform: translateY(-2px);
 }
 
 .features-section,
@@ -190,23 +203,23 @@
 }
 
 .feature-card {
-    background-color: #1a422e;
+    background-color: #d1fae5; /* Light green */
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: var(--spacing-6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #2d9d5d;
-    color: var(--white);
+    border: 1px solid #34d399;
+    color: #065f46; /* Dark green text */
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(45, 157, 93, 0.3);
+    box-shadow: 0 10px 15px rgba(52, 211, 153, 0.3);
 }
 
 .feature-icon {
-    background-color: rgba(45, 157, 93, 0.2);
-    color: #4ade80;
+    background-color: rgba(34, 197, 94, 0.2);
+    color: #065f46;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -227,19 +240,19 @@
 }
 
 .step {
-    background-color: #1a422e;
+    background-color: #d1fae5; /* Light green */
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: var(--spacing-6) var(--spacing-4);
     text-align: center;
     width: 180px;
-    border: 1px solid #2d9d5d;
-    color: var(--white);
+    border: 1px solid #34d399;
+    color: #065f46;
 }
 
 .step-number {
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: #34d399;
+    color: #ffffff;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -265,33 +278,33 @@
 }
 
 .price-card {
-    background-color: #1a422e;
+    background-color: #d1fae5; /* Light green */
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: var(--spacing-6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
-    border: 1px solid #2d9d5d;
-    color: var(--white);
+    border: 1px solid #34d399;
+    color: #065f46;
 }
 
 .price-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 15px rgba(45, 157, 93, 0.3);
+    box-shadow: 0 10px 15px rgba(52, 211, 153, 0.3);
 }
 
 .price-card.featured {
-    border: 2px solid #4ade80;
+    border: 2px solid #34d399;
     transform: scale(1.05);
-    background-color: #1e4e35;
+    background-color: #bbf7d0; /* Slightly darker light green */
 }
 
 .price-header {
     text-align: center;
     margin-bottom: var(--spacing-6);
     padding-bottom: var(--spacing-6);
-    border-bottom: 1px solid #2d9d5d;
+    border-bottom: 1px solid #34d399;
 }
 
 .price {
@@ -309,7 +322,7 @@
 .price span, .price-discount span {
     font-size: 1rem;
     font-weight: 400;
-    color: #a3e635;
+    color: #065f46;
 }
 
 .price-features {
@@ -332,31 +345,30 @@
     .hero-content h1 {
         font-size: 2rem;
     }
-    
+
     .hero-content p {
         font-size: 1rem;
     }
-    
+
     .steps {
         flex-direction: column;
         gap: var(--spacing-4);
     }
-    
+
     .step {
         width: 100%;
     }
-    
+
     .step-arrow {
         transform: rotate(90deg);
         margin: var(--spacing-2) 0;
     }
-    
+
     .price-card.featured {
         transform: none;
     }
-    
+
     .price-card.featured:hover {
         transform: translateY(-5px);
     }
 }
-</style>

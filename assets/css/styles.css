@@ -481,9 +481,10 @@ textarea:focus {
 
 /* Footer */
 footer {
-    background-color: var(--gray-800);
+    background-color: #0f5132;
     color: var(--white);
     padding: var(--spacing-8) 0;
+    border-top: 1px solid #2d9d5d;
 }
 
 .footer-content {
@@ -496,18 +497,17 @@ footer {
 .footer-logo {
     display: flex;
     align-items: center;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--spacing-2);
 }
 
 .footer-logo i {
+    font-size: 1.5rem;
     margin-right: var(--spacing-2);
+    color: #2d9d5d;
 }
 
 .footer-info {
-    color: var(--gray-400);
-    margin-bottom: var(--spacing-4);
+    margin: var(--spacing-2) 0;
 }
 
 .footer-links {
@@ -516,11 +516,13 @@ footer {
 }
 
 .footer-links a {
-    color: var(--gray-400);
+    color: #8fe0b9;
+    transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: var(--white);
+    color: #4ade80;
+    text-decoration: underline;
 }
 
 /* Progress bar */

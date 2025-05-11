@@ -192,7 +192,6 @@ $notifications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
         </div>
     </div>
 </div>
-
 <style>
 .dashboard-overview {
     margin-bottom: var(--spacing-8);
@@ -220,7 +219,7 @@ $notifications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 
 .empty-data i {
     font-size: 3rem;
-    color: var(--gray-300);
+    color: #a3a3a3; /* neutral muted icon */
     margin-bottom: var(--spacing-4);
 }
 
@@ -236,14 +235,15 @@ $notifications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     align-items: center;
     justify-content: center;
     padding: var(--spacing-4);
-    background-color: var(--gray-100);
+    background-color: #d1fae5; /* light green */
     border-radius: var(--border-radius);
     transition: all 0.2s ease;
+    color: #065f46;
 }
 
 .quick-action:hover {
-    background-color: var(--primary-light);
-    color: var(--white);
+    background-color: #10b981; /* strong green */
+    color: #ffffff;
     transform: translateY(-2px);
 }
 
@@ -264,12 +264,13 @@ $notifications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     align-items: center;
     padding: var(--spacing-3);
     border-radius: var(--border-radius);
-    background-color: var(--gray-100);
+    background-color: #d1fae5; /* light green */
     transition: background-color 0.2s ease;
+    color: #065f46;
 }
 
 .notification:hover {
-    background-color: var(--gray-200);
+    background-color: #bbf7d0;
 }
 
 .notification-content {
@@ -282,21 +283,21 @@ $notifications = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
 }
 
 .notification-time {
-    color: var(--gray-500);
+    color: #6b7280; /* gray-500 */
     font-size: 0.75rem;
 }
 
 .notification-link {
-    color: var(--primary);
+    color: #059669; /* primary action link */
     padding: var(--spacing-2);
 }
 
 .notification-link:hover {
-    color: var(--primary-light);
+    color: #34d399; /* lighter green */
 }
 
 .text-muted {
-    color: var(--gray-500);
+    color: #6b7280;
     text-align: center;
     padding: var(--spacing-4) 0;
 }

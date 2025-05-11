@@ -95,6 +95,7 @@
 </div>
 
 <style>
+<style>
 .auth-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -104,16 +105,17 @@
 }
 
 .auth-card {
-    background-color: var(--white);
+    background-color: #d1fae5; /* Light green */
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     overflow: hidden;
+    color: #065f46; /* Dark green text */
 }
 
 .auth-info {
     padding: var(--spacing-8);
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: #d1fae5; /* Light green */
+    color: #065f46;
     border-radius: var(--border-radius);
     position: relative;
     overflow: hidden;
@@ -129,7 +131,7 @@
     background: url('https://images.pexels.com/photos/3867220/pexels-photo-3867220.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     background-position: center;
-    opacity: 0.1;
+    opacity: 0.08;
     z-index: 0;
 }
 
@@ -158,13 +160,16 @@
     font-size: 1.25rem;
     width: 24px;
     text-align: center;
+    color: #10b981; /* Accent green */
 }
 
 .demo-credentials {
     margin-top: var(--spacing-8);
     padding: var(--spacing-4);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #bbf7d0; /* Lighter green */
+    border: 1px solid #10b981;
     border-radius: var(--border-radius);
+    color: #065f46;
 }
 
 .demo-credentials h4 {
@@ -180,10 +185,29 @@
     margin: 0 auto;
 }
 
+/* New styles for card sections */
+.card-header {
+    padding: var(--spacing-4);
+    background-color: #10b981; /* Primary green */
+    color: white;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: var(--spacing-6);
+    color: #065f46;
+}
+
 .card-footer {
     padding: var(--spacing-4);
-    background-color: var(--gray-50);
+    background-color: #10b981;
     text-align: center;
+    color: white;
+}
+
+.card-footer a {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .text-center {
@@ -194,7 +218,7 @@
     .auth-container {
         grid-template-columns: 1fr;
     }
-    
+
     .auth-info {
         display: none;
     }
