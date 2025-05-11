@@ -190,21 +190,23 @@
 }
 
 .feature-card {
-    background-color: var(--white);
+    background-color: #1a422e;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: var(--spacing-6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #2d9d5d;
+    color: var(--white);
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 10px 15px rgba(45, 157, 93, 0.3);
 }
 
 .feature-icon {
-    background-color: rgba(59, 130, 246, 0.1);
-    color: var(--primary);
+    background-color: rgba(45, 157, 93, 0.2);
+    color: #4ade80;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -225,12 +227,14 @@
 }
 
 .step {
-    background-color: var(--white);
+    background-color: #1a422e;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: var(--spacing-6) var(--spacing-4);
     text-align: center;
     width: 180px;
+    border: 1px solid #2d9d5d;
+    color: var(--white);
 }
 
 .step-number {
@@ -261,34 +265,33 @@
 }
 
 .price-card {
-    background-color: var(--white);
+    background-color: #1a422e;
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     padding: var(--spacing-6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+    border: 1px solid #2d9d5d;
+    color: var(--white);
 }
 
 .price-card:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 10px 15px rgba(45, 157, 93, 0.3);
 }
 
 .price-card.featured {
-    border: 2px solid var(--primary);
+    border: 2px solid #4ade80;
     transform: scale(1.05);
-}
-
-.price-card.featured:hover {
-    transform: scale(1.05) translateY(-5px);
+    background-color: #1e4e35;
 }
 
 .price-header {
     text-align: center;
     margin-bottom: var(--spacing-6);
     padding-bottom: var(--spacing-6);
-    border-bottom: 1px solid var(--gray-200);
+    border-bottom: 1px solid #2d9d5d;
 }
 
 .price {
@@ -306,7 +309,7 @@
 .price span, .price-discount span {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--gray-500);
+    color: #a3e635;
 }
 
 .price-features {

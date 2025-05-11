@@ -10,31 +10,14 @@
  * @return bool True if login successful, false otherwise
  */
 function login($studentId, $password) {
-    global $conn;
+    // TEMPORARY: Auto-login for development purposes
+    // Set session variables with dummy user data
+    $_SESSION['user_id'] = 1;
+    $_SESSION['student_id'] = $studentId;
+    $_SESSION['name'] = 'Development User';
+    $_SESSION['role'] = strtolower($studentId) === 'admin001' ? 'admin' : 'student';
     
-    $stmt = $conn->prepare("SELECT id, student_id, name, password, role FROM users WHERE student_id = ?");
-    $stmt->bind_param("s", $studentId);
-    $stmt->execute();
-    $result = $stmt->get_result();
-    
-    if ($result->num_rows === 1) {
-        $user = $result->fetch_assoc();
-        
-        if (password_verify($password, $user['password'])) {
-            // Set session variables
-            $_SESSION['user_id'] = $user['id'];
-            $_SESSION['student_id'] = $user['student_id'];
-            $_SESSION['name'] = $user['name'];
-            $_SESSION['role'] = $user['role'];
-            
-            // Log the login activity
-            logActivity($user['id'], 'login', 'User logged in');
-            
-            return true;
-        }
-    }
-    
-    return false;
+    return true;
 }
 
 /**

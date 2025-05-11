@@ -1,9 +1,9 @@
 <?php
 // Database configuration
-define('DB_HOST', '127.0.0.1');
+define('DB_HOST', 'localhost');
 define('DB_USER', 'root'); // Change to your MySQL username
 define('DB_PASS', ''); // Change to your MySQL password
-define('DB_NAME', 'print');
+define('DB_NAME', '');
 
 // Application configuration
 define('APP_NAME', 'Forda Print');
